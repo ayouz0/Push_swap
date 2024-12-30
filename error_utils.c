@@ -6,7 +6,7 @@
 /*   By: aaitabde <aaitabde@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 16:06:06 by aaitabde          #+#    #+#             */
-/*   Updated: 2024/12/29 22:22:07 by aaitabde         ###   ########.fr       */
+/*   Updated: 2024/12/30 19:57:17 by aaitabde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@ void prerror()
 {
 	write (2, "Error\n", 6);
 	exit(1);
+}
+
+
+void get_out(char **nums)
+{
+	free_array(nums);
+	prerror();
 }
 
 int digit_syntax(char *nums)
@@ -36,7 +43,7 @@ int digit_syntax(char *nums)
 
 int	all_good(char *nums)
 {
-	int i;
+	int i; 
 
 	i = 0;
 	
@@ -59,11 +66,6 @@ void free_array(char **input)
 	free(input);
 }
 
-void get_out(char **nums)
-{
-	free_array(nums);
-	prerror();
-}
 
 int parse_input(char **nums)
 {

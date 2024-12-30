@@ -6,7 +6,7 @@
 /*   By: aaitabde <aaitabde@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 16:33:01 by aaitabde          #+#    #+#             */
-/*   Updated: 2024/12/29 21:34:18 by aaitabde         ###   ########.fr       */
+/*   Updated: 2024/12/30 22:32:23 by aaitabde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,13 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *s);
 int		parse_input(char **nums);
-void	get_out();
+void	get_out(char **nums);
 void	prerror();
+int		init_stack_a(int ac, t_stack **a, char **nums);
+void	free_array(char **input);
+void	free_stack(t_stack **a);
+void	print_stack(t_stack **a);
+t_stack	*newlst(int val);
+void	lstadd_front(t_stack **lst, t_stack *new);
+int		sorted (t_stack **a);
+void	sa(t_stack **a);

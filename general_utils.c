@@ -6,7 +6,7 @@
 /*   By: aaitabde <aaitabde@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 19:47:46 by aaitabde          #+#    #+#             */
-/*   Updated: 2024/12/29 22:26:25 by aaitabde         ###   ########.fr       */
+/*   Updated: 2024/12/30 11:41:32 by aaitabde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**join_args(char **argv)
 	int		i;
 
 	i = 1;
-	tmp = ft_strdup(" ");
+	tmp = ft_strdup("");
 	while (argv[i])
 	{
 		str = ft_strjoin(tmp, argv[i]);

@@ -10,7 +10,7 @@ MAGENTA = \033[1;35m
 
 CFLAGS = -Wall -Werror -Wextra
 
-SRC = $(wildcard *.c)
+SRC = error_utils.c general_utils.c general_utils1.c  parsing_utils.c stack_utils.c stack_utils1.c stack_utils2.c main.c
 
 OBJ = ${SRC:.c=.o}
 
@@ -29,7 +29,8 @@ all : $(NAME)
 
 clean : 
 	@echo "$(RED)🧹 Cleaning up build files...$(RESET_COLOR)"
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@sleep 0.6 && clear
 	@echo "$(GREEN)✨ Clean complete.$(RESET_COLOR)"
 fclean : clean
 	@rm -f $(NAME)
